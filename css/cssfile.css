@@ -15,6 +15,7 @@ body{
 	margin-left: 18.0555556%;
 	margin-right: 18.0555556%;
 	margin-top: 25%;
+	display: block;
 
 }
 #left-container{
@@ -61,6 +62,7 @@ p{
 	border-radius: 10px;
 	margin-left: 40px;
 	padding: 1px;
+	padding-right: 0px;
 }
 #status{
 	height: 20px;
@@ -76,6 +78,56 @@ p{
 	border-radius: 50%;
 	background-color: white;
 }
+.GB-left1{
+	width: 180px;
+	height:78px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+	float: right;
+	margin-right: 35px;
+	margin-top: -125px;
+;
+}
+.GB-left1:after{
+	content: '';
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 48px;
+	width: 60px; 
+  	height: 60px; 
+  	background-color: white;
+  	clip-path: polygon(50% 0%, 50% 100%, 0 50%);
+  	display: inline;
+}
+.GB-left-text1{
+	position: relative;
+	color: black;
+	margin-top: 15px;
+	margin-right: 40px;
+	font-weight: 700;
+	float: right;
+
+}
+.GB-left2{
+	width: 180px;
+	height:78px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+	float: right;
+	margin-right: 25%;
+	margin-top: -30px;
+	display: none;
+}
+.GB-left-text2{
+	position: relative;
+	color: black;
+	margin-top: 15px;
+	margin-left: 40px;
+	font-weight: 700;
+	display: none;
+}
 @media screen and (max-width: 1025px){
 	#left-container{
 		width: 100%;
@@ -90,6 +142,17 @@ p{
 	body{
 		background-image: url('../images/bg-mobile.png');
 		background-size: cover;
-
+	}
+	.GB-left1{
+		display: none;
+	}
+	.GB-left-text1{
+		display: none;
+	}
+	.GB-left2{
+		display: block;
+	}
+	.GB-left-text2{
+		display: block;
 	}
 }
