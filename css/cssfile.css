@@ -1,0 +1,95 @@
+*{
+	transition: all ease-in-out 200ms;
+}
+body{
+	background-image: url('../images/bg-desktop.png');
+	background-color:#0C122C;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+
+}
+#main{
+	margin-left: 18.0555556%;
+	margin-right: 18.0555556%;
+	margin-top: 25%;
+
+}
+#left-container{
+	width: 38.0434783%;
+	background-color: hsl(228, 56%, 26%);
+	display: inline-block;
+	float: left;
+	padding: 2.7173913%;
+	box-sizing:border-box;
+	border-radius: 20px;
+	border-top-right-radius: 100px;
+	
+}
+#right-container{
+	margin-top: 40px;
+	width:58.6956522%;
+	background-color: hsl(228, 56%, 26%);
+	display: inline-block;
+	float: right;
+	border-radius: 20px;
+	
+}
+.icon{
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: hsl(229, 57%, 11%);
+	width: 50px;
+	height: 50px;
+	display: inline;
+	float: left;
+	border-radius: 10px;
+}
+svg{
+	padding: 15px;
+}
+p{
+	color: white;
+}
+#statusbar{
+	height: 20px;
+	width: 85.1851852%;
+	background-color:  hsl(229, 57%, 11%);
+	border-radius: 10px;
+	margin-left: 40px;
+	padding: 1px;
+}
+#status{
+	height: 20px;
+	width: 76.0869565%;
+	background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+	border-radius: 10px;
+}
+#progress{
+	height: 18px;
+	width: 18px;
+	margin: 1px;
+	float: right;
+	border-radius: 50%;
+	background-color: white;
+}
+@media screen and (max-width: 1025px){
+	#left-container{
+		width: 100%;
+	}
+	#right-container{
+		width: 100%;
+	}
+	#main{
+		margin-left: 5.8666667%;
+		margin-right: 5.8666667%;
+	}
+	body{
+		background-image: url('../images/bg-mobile.png');
+		background-size: cover;
+
+	}
+}
